@@ -35,6 +35,24 @@ class TestSetup(unittest.TestCase):
         layers = [l.getName() for l in registered_layers()]
         self.assertIn('IPloneFotoramaLayer', layers)
 
+    def test_css_registered(self):
+        """Validate that the CSS files are registered properly."""
+        css_registry = self.portal['portal_css']
+        stylesheets_ids = css_registry.getResourceIds()
+        self.assertIn(
+            '++resource++ps.plone.fotorama/fotorama.css',
+            stylesheets_ids,
+        )
+
+    def test_js_registered(self):
+        """Validate that the JS files are registered properly."""
+        js_registry = self.portal['portal_javascripts']
+        javascript_ids = js_registry.getResourceIds()
+        self.assertIn(
+            '++resource++ps.plone.fotorama/fotorama.js',
+            javascript_ids,
+        )
+
 
 class UninstallTestCase(unittest.TestCase):
 
