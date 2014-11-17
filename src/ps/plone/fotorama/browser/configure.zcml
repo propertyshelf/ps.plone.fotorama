@@ -3,4 +3,12 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="ps.plone.fotorama">
 
+  <!-- Browser Resources. -->
+  <!-- ================== -->
+  <browser:resourceDirectory
+      directory="static"
+      layer=".interfaces.IPloneFotoramaLayer"
+      name="ps.plone.fotorama"
+      />
+
 </configure>
