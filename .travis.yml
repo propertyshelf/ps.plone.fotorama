@@ -40,3 +40,5 @@ after_success:
   - coveralls
 notifications:
   irc: irc.freenode.org#propertyshelf
+  hipchat:
+    secure: "g5V2yG+W1bbLU6LmhtOfVnZClotagxSk7mXQ0zP0JTYBID16912faSClJUWA7OIrIBwvnLxCsRy4qca9/DYsTEhX3PLq/GqsjG5jAPH20c5iPBlEPMktQbuFFLwkQ6KISmEtjt9GMc/nCeWIhTikTyKr5p3R3wd5JoLclZTyA5U="
