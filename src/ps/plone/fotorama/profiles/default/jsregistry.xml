@@ -2,8 +2,8 @@
 <object name="portal_javascripts">
   <javascript
       cacheable="True"
-      compression="safe"
-      cookable="True"
+      compression="none"
+      cookable="False"
       enabled="True"
       id="++resource++ps.plone.fotorama/fotorama.js"
       />
