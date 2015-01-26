@@ -3,7 +3,7 @@
 
 from setuptools import setup, find_packages
 
-version = '4.6.3dev'
+version = '4.6.2.2'
 description = 'Fotorama slideshow for Plone.'
 long_description = ('\n'.join([
     open('README.rst').read(),
