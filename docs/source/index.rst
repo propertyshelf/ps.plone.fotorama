@@ -10,6 +10,8 @@ Fotorama slideshow for Plone
 .. toctree::
    :maxdepth: 2
 
+   configuration
+
 
 .. only:: html
 
@@ -41,26 +43,6 @@ Fotorama slideshow for Plone
   .. image:: https://badge.fury.io/gh/propertyshelf%2Fps.plone.fotorama.png
       :target: http://badge.fury.io/gh/propertyshelf%2Fps.plone.fotorama
       :alt: Fury Github
-
-  .. image:: https://pypip.in/d/ps.plone.fotorama/badge.png
-      :target: https://pypi.python.org/pypi/ps.plone.fotorama/
-      :alt: Downloads
-
-  .. image:: https://pypip.in/v/ps.plone.fotorama/badge.png
-      :target: https://pypi.python.org/pypi/ps.plone.fotorama/
-      :alt: Latest Version
-
-  .. image:: https://pypip.in/wheel/ps.plone.fotorama/badge.png
-      :target: https://pypi.python.org/pypi/ps.plone.fotorama/
-      :alt: Wheel Status
-
-  .. image:: https://pypip.in/egg/ps.plone.fotorama/badge.png
-      :target: https://pypi.python.org/pypi/ps.plone.fotorama/
-      :alt: Egg Status
-
-  .. image:: https://pypip.in/license/ps.plone.fotorama/badge.png
-      :target: https://pypi.python.org/pypi/ps.plone.fotorama/
-      :alt: License
 
 
 .. _`Plone`: http://plone.org
