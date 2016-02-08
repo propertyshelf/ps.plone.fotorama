@@ -4,7 +4,7 @@ Changelog
 4.6.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update fotorama to 4.6.4.
 
 
 4.6.3 (2016-02-08)
