@@ -4,7 +4,7 @@ Changelog
 4.6.4 (unreleased)
 ------------------
 
-- Update fotorama to 4.6.4.
+- Update fotorama to 4.6.4. This release ships with a minified JS version.
 
 
 4.6.3 (2016-02-08)
