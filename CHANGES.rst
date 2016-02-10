@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.6.5 (unreleased)
-------------------
+4.6.4.1 (2016-02-10)
+--------------------
 
 - Use plone resource urls for pngs.
 
