@@ -4,7 +4,7 @@ Changelog
 4.6.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use plone resource urls for pngs.
 
 
 4.6.4 (2016-02-08)
