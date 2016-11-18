@@ -14,7 +14,6 @@ from plone.testing import (
     Layer,
     z2,
 )
-from zope.configuration import xmlconfig
 
 
 class PsPloneFotoramaLayer(PloneSandboxLayer):
@@ -25,11 +24,7 @@ class PsPloneFotoramaLayer(PloneSandboxLayer):
         """Set up Zope for testing."""
         # Load ZCML
         import ps.plone.fotorama
-        xmlconfig.file(
-            'configure.zcml',
-            ps.plone.fotorama,
-            context=configurationContext,
-        )
+        self.loadZCML(package=ps.plone.fotorama)
 
     def setUpPloneSite(self, portal):
         """Set up a Plone site for testing."""
