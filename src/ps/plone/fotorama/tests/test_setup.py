@@ -26,6 +26,9 @@ class TestSetup(unittest.TestCase):
     def setUp(self):
         """Additional test setup."""
         self.portal = self.layer['portal']
+        plone_version = api.env.plone_version()
+        self.has_plone4 = '3' < plone_version < '5'
+        self.has_plone5 = '4' < plone_version < '6'
 
     def test_product_is_installed(self):
         """Validate that our product is installed."""
@@ -37,8 +40,10 @@ class TestSetup(unittest.TestCase):
         layers = [l.getName() for l in registered_layers()]
         self.assertIn('IPloneFotoramaLayer', layers)
 
-    def test_css_registered(self):
+    def test_css_registered_plone4(self):
         """Validate that the CSS files are registered properly."""
+        if not self.has_plone4:
+            return
         css_registry = self.portal['portal_css']
         stylesheets_ids = css_registry.getResourceIds()
         self.assertIn(
@@ -46,8 +51,10 @@ class TestSetup(unittest.TestCase):
             stylesheets_ids,
         )
 
-    def test_js_registered(self):
+    def test_js_registered_plone4(self):
         """Validate that the JS files are registered properly."""
+        if not self.has_plone4:
+            return
         js_registry = self.portal['portal_javascripts']
         javascript_ids = js_registry.getResourceIds()
         self.assertIn(

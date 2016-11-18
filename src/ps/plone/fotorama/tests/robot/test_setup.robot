@@ -11,12 +11,12 @@ Suite Teardown  Teardown
 Show how to activate the add-on
     Enable autologin as  Manager
     Go to  ${PLONE_URL}/prefs_install_products_form
-    Page should contain element  id=ps.plone.fotorama
+    Page should contain element  xpath=//*[@value='ps.plone.fotorama']
     Assign id to element
-    ...  xpath=//*[@id='ps.plone.fotorama']/parent::*
+    ...  xpath=//*[@value='ps.plone.fotorama']/parent::*
     ...  addons-psplonefotorama
     Assign id to element
-    ...  xpath=//*[@id='ps.plone.fotorama']/ancestor::form
+    ...  xpath=//*[@value='ps.plone.fotorama']/ancestor::form
     ...  addons-enabled
 
     Highlight  addons-psplonefotorama
