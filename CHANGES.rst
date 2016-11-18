@@ -4,7 +4,7 @@ Changelog
 4.6.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add Plone 5 compatibility.
 
 
 4.6.4.1 (2016-02-10)
