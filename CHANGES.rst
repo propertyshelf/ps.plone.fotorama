@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.6.5 (unreleased)
-------------------
+4.6.4.3 (2016-11-21)
+--------------------
 
 - Fix browserlayer errors in GS profiles.
 
