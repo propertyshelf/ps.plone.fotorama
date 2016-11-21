@@ -36,4 +36,12 @@
       title="ps.plone.fotorama"
       />
 
+
+  <!-- GenericSetup utilities. -->
+  <!-- ======================= -->
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="ps.plone.fotorama-hiddenprofiles"
+      />
+
 </configure>
