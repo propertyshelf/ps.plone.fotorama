@@ -13,10 +13,10 @@ Show how to activate the add-on
     Go to  ${PLONE_URL}/prefs_install_products_form
     Page should contain element  xpath=//*[@value='ps.plone.fotorama']
     Assign id to element
-    ...  xpath=//*[@value='ps.plone.fotorama']/parent::*
+    ...  xpath=//*[@value='ps.plone.fotorama']/ancestor::li
     ...  addons-psplonefotorama
     Assign id to element
-    ...  xpath=//*[@value='ps.plone.fotorama']/ancestor::form
+    ...  xpath=//*[@value='ps.plone.fotorama']/ancestor::ul/parent::*/parent::*
     ...  addons-enabled
 
     Highlight  addons-psplonefotorama
