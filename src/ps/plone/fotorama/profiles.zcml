@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="ps.plone.fotorama">
 
@@ -34,6 +35,35 @@
       name="default"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       title="ps.plone.fotorama"
+      />
+
+  <!-- Uninstall: base. -->
+  <genericsetup:registerProfile
+      description="ps.plone.fotorama base uninstall profile."
+      directory="profiles/uninstall-base"
+      name="uninstall-base"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      title="ps.plone.fotorama base uninstall profile"
+      />
+
+  <!-- Uninstall: Plone 4. -->
+  <genericsetup:registerProfile
+      zcml:condition="not-have plone-5"
+      description="A Plone 4 uninstall profile for ps.plone.fotorama."
+      directory="profiles/uninstall-plone4"
+      name="uninstall"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      title="ps.plone.fotorama - uninstall"
+      />
+
+  <!-- Uninstall: Plone 5. -->
+  <genericsetup:registerProfile
+      zcml:condition="have plone-5"
+      description="A Plone 5 uninstall profile for ps.plone.fotorama."
+      directory="profiles/uninstall-plone5"
+      name="uninstall"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      title="ps.plone.fotorama - uninstall"
       />
 
 
