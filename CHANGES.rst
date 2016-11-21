@@ -4,7 +4,7 @@ Changelog
 4.6.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix browserlayer errors in GS profiles.
 
 
 4.6.4.2 (2016-11-18)
